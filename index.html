@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Restaurant</title>
+    <link rel="stylesheet" href="Restaurant Menu Page.css">
+</head>
+<body>
+
+    <!-- Background Section -->
+    <div class="bgimg">
+        <div class="overlay">
+            <!-- Top-left Menu & Contact Buttons -->
+            <div class="menu-buttons">
+                <a href="#menuModal" class="button">Menu</a>
+                <a href="#contactModal" class="button">Contact</a>
+            </div>
+
+            <!-- Centered Restaurant Name -->
+            <div class="restaurant-name">THE HEAVEN <b>-</b> Family Resto-Bar</div>
+
+            <!-- Bottom-left Info -->
+            <div class="info">
+                <p>Monday - Friday (11AM-1AM) | Saturday - Sunday (12PM-03AM)</p>
+                <p>Shop 501, 112/1/2/3, Plot 8, Opposite Mega Mart, Balewadi, Pune</p>
+            </div>
+        </div>
+    </div>
+
+ <!-- Menu Modal -->
+<div id="menuModal" class="modal">
+    <div class="modal-content">
+        <a href="#" class="close">&times;</a>
+        <h2>Our Menu</h2>
+
+        <div class="menu-section">
+            <h3>🥂 Starters</h3>
+            <p>Garlic Bread – ₹120</p>
+            <p>Crispy Chicken Wings – ₹250</p>
+            <p>Cheese Nachos – ₹200</p>
+            <p>Spicy Paneer Tikka – ₹220</p>
+            <p>French Fries – ₹150</p>
+        </div>
+
+        <div class="menu-section">
+            <h3>🍸 Beverages & Cocktails</h3>
+            <p>Classic Mojito – ₹180</p>
+            <p>Whiskey Sour – ₹250</p>
+            <p>Long Island Iced Tea – ₹350</p>
+            <p>Cosmopolitan – ₹300</p>
+            <p>Fresh Lime Soda – ₹100</p>
+        </div>
+
+        <div class="menu-section">
+            <h3>🍕 Main Course</h3>
+            <p>Grilled Chicken Steak – ₹450</p>
+            <p>BBQ Paneer Pizza – ₹380</p>
+            <p>Alfredo Pasta (Veg/Chicken) – ₹320/₹380</p>
+            <p>Butter Chicken with Naan – ₹480</p>
+            <p>Veg Biryani – ₹300</p>
+        </div>
+
+        <div class="menu-section">
+            <h3>🍰 Desserts</h3>
+            <p>Chocolate Brownie with Ice Cream – ₹250</p>
+            <p>New York Cheesecake – ₹280</p>
+            <p>Gulab Jamun – ₹120</p>
+            <p>Tiramisu – ₹300</p>
+        </div>
+
+        <div class="menu-section">
+            <h3>🍾 Premium Drinks</h3>
+            <p>Red Wine (Glass) – ₹400</p>
+            <p>Beer Pint – ₹200</p>
+            <p>Tequila Shot – ₹250</p>
+            <p>Single Malt Whiskey – ₹600</p>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <a href="#" class="close">&times;</a>
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="number" placeholder="Number of People" required>
+                <input type="datetime-local" required>
+                <textarea placeholder="Special Requests"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
