@@ -1,0 +1,214 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Full-screen Background */
+.bgimg {
+    background-image: url('https://media-hosting.imagekit.io//ead0b5fbe6794233/WhatsApp%20Image%202025-03-16%20at%206.38.55%20PM.jpeg?Expires=1836738600&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=YMSoGimjHE~wPjwEaJALUzT16dWQtTejDleD2Mc5UDPG61TbcqfEt5~OHbb30NnuQFrSOuB4Cp1Sj64oxAKzrVyAOwDCa3qcfNLvSwSvwXAnYZ927dhSR77ow6ZTEvQvCU7xybJDb2M3lh3oKQIacc2zK79LbDD~YRuBGWwKv-cjFsZSTl5GlVUD1EanIJgn7kWotmKkNdAdVHF1o~sSJEzWb0L2olBm-Y~cFvBZBhsIxkk9LPRszy6ccVBN8ooJr1jjFCw3BWrCNanmmKu3Rgwq7fdVWK7uQNSrtudMxrJkGz4M6~j0BtVi7NlMffq5w4NODqtsBXOU9AwCBNbMsA__');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Dark Overlay */
+.overlay {
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Top-left Buttons */
+.menu-buttons {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    background: black;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 5px 0;
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background: #d32f2f;
+}
+
+/* Centered Restaurant Name */
+.restaurant-name {
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+/* Bottom-left Info */
+.info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 16px;
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Open Modals via URL Hash */
+#menuModal:target,
+#contactModal:target {
+    display: flex;
+}
+
+/* ----------------- SCROLLABLE MENU MODAL ----------------- */
+.modal-content {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    height: 80vh; /* Fixed height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    border-radius: 5px;
+}
+
+/* Close Button */
+.close {
+    color: red;
+    text-decoration: none;
+    font-size: 24px;
+    display: block;
+    text-align: right;
+    font-weight: bold;
+}
+
+/* ----------------- MENU SECTIONS WITH BLACK BORDER ----------------- */
+.menu-section {
+    margin: 15px 0;
+    padding: 10px;
+    background: #ffffff;
+    border-radius: 8px;
+    border: 2px solid black; /* Black border for each section */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Section Titles */
+.menu-section h3 {
+    color: #d32f2f;
+    margin-bottom: 5px;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Menu Items */
+.menu-section p {
+    font-size: 16px;
+    margin: 5px 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea, button {
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #000000;
+}
+
+button {
+    background: black;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #d32f2f;
+}
+/* ----------------- CONTACT MODAL STYLES ----------------- */
+#contactModal .modal-content {
+    width: 90%;
+    max-width: 350px; /* Smaller modal width */
+    padding: 15px;
+    height: auto; /* Adjust height dynamically */
+    text-align: center;
+}
+
+.contact-header {
+    font-size: 22px;
+    color: #d32f2f;
+    margin-bottom: 10px;
+}
+
+.contact-info {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background: black;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background: #d32f2f;
+}
